@@ -5,7 +5,7 @@ import numpy as np
 
 
 class CSCE(nn.Module):
-    def __init__(self, num_classes, feat_dim, class_weights, cls_num_list, max_m=0.5, s=1, reduction='mean'):
+    def __init__(self, num_classes, feat_dim, class_weights, cls_num_list, reduction='mean'):
         super(CSCE, self).__init__()
         self.device = torch.device("cuda")
         self.num_classes = num_classes
@@ -15,13 +15,6 @@ class CSCE(nn.Module):
 
         self.centers = nn.Parameter(torch.randn(num_classes, feat_dim).to(self.device))
         self.class_weights = torch.tensor(class_weights, dtype=torch.float32).to(self.device)
-
-        m_list = 1.0 / np.sqrt(np.sqrt(cls_num_list))
-        m_list = m_list * (max_m / np.max(m_list))
-        m_list = torch.cuda.FloatTensor(m_list)
-        self.m_list = m_list
-        assert s > 0
-        self.s = s
 
     def forward(self, x, target):
 
@@ -47,6 +40,4 @@ class CSCE(nn.Module):
         elif self.reduction == 'sum':
             loss = torch.sum(ccbl_loss)
             return loss
-        else:
-            return ccbl_loss
 
