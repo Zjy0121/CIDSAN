@@ -23,7 +23,7 @@ class LDAM_CCBL(nn.Module):
         assert s > 0
         self.s = s
         self.weight = weight
-        # 可学习的参数，用于特定类别的中心
+        # Learnable parameters for specific categories of centers
         self.centers = nn.Parameter(torch.randn(num_classes, num_classes).to(self.device))
 
     def forward(self, x, target):
@@ -46,7 +46,7 @@ class LDAM_CCBL(nn.Module):
         # kmeans.fit(x.detach().cpu().numpy())
         # centers_batch = torch.tensor(kmeans.cluster_centers_, dtype=torch.float32).to(x.device)
 
-        # 收集与标签相对应的中心点
+        # Collect centers that correspond to labels
         centers_batch = self.centers.to(x.device)
         target = target.to(x.device)
 
