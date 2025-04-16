@@ -32,7 +32,7 @@ class SimAM(torch.nn.Module):
         return x * self.activation(y)
 
 
-# 构建卷积神经网络的模型
+# Modeling Convolutional Neural Networks
 class SimCNN(nn.Module):
     def __init__(self, pretrained=False, simam=True, in_channel=1, out_channel=10):
         super(SimCNN, self).__init__()
