@@ -7,7 +7,7 @@ References
 -
 Part of the code refers to the following open-source code:
 <br>
-from the paper "Domain Adversarial Graph Convolutional Network for Fault Diagnosis Under Variable Working Conditions" proposed by Li et al.
+from the paper "[Domain Adversarial Graph Convolutional Network for Fault Diagnosis Under Variable Working Conditions](https://ieeexplore.ieee.org/document/9410617)" proposed by Li et al.
 
 Citation
 -
