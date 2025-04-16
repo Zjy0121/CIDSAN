@@ -12,13 +12,13 @@ from the paper "Domain Adversarial Graph Convolutional Network for Fault Diagnos
 
 Citation
 -
-@article{ZHOU2025115901,
-title = {Cross-domain transfer fault diagnosis by class-imbalanced deep subdomain adaptive network},
-author = {Jianyu Zhou and Xiangfeng Zhang and Hong Jiang and Jun Li and Zhenfa Shao},
-journal = {Measurement},
-volume = {242},
-pages = {115901},
-year = {2025},
-doi = {https://doi.org/10.1016/j.measurement.2024.115901},
-publisher={Elsevier}
-}
+    @article{ZHOU2025115901,
+    title = {Cross-domain transfer fault diagnosis by class-imbalanced deep subdomain adaptive network},
+    author = {Jianyu Zhou and Xiangfeng Zhang and Hong Jiang and Jun Li and Zhenfa Shao},
+    journal = {Measurement},
+    volume = {242},
+    pages = {115901},
+    year = {2025},
+    doi = {https://doi.org/10.1016/j.measurement.2024.115901},
+    publisher={Elsevier}
+    }
