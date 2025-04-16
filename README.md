@@ -6,7 +6,7 @@ This data preprocessing method applies to missing data, open-set domain adaptati
 References
 -
 Part of the code refers to the following open-source code:
-        from the paper "Domain Adversarial Graph Convolutional Network for Fault Diagnosis Under Variable Working Conditions" proposed by Li et al.
+from the paper "Domain Adversarial Graph Convolutional Network for Fault Diagnosis Under Variable Working Conditions" proposed by Li et al.
 
 Citation
 -
