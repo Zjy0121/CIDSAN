@@ -1,12 +1,13 @@
 CIDSAN
 -
-This repository officially implements CIDSAN: Cross-domain transfer fault diagnosis by class-imbalanced deep subdomain adaptive network.<br>
-This data preprocessing method applies to missing data, open-set domain adaptation, and unbalanced domain adaptation.
+This repository officially implements CIDSAN: Cross-domain transfer fault diagnosis by class-imbalanced deep subdomain adaptive network.
+<br>This data preprocessing method applies to missing data, open-set domain adaptation, and unbalanced domain adaptation.
 
 References
 -
 Part of the code refers to the following open-source code:
-from the paper "Domain Adversarial Graph Convolutional Network for Fault Diagnosis Under Variable Working Conditions" proposed by Li et al.<br>
+<br>
+from the paper "Domain Adversarial Graph Convolutional Network for Fault Diagnosis Under Variable Working Conditions" proposed by Li et al.
 
 Citation
 -
