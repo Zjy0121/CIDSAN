@@ -8,7 +8,7 @@ References
 Part of the code refers to the following open-source code:
 <br>
 * from the paper "[Domain Adversarial Graph Convolutional Network for Fault Diagnosis Under Variable Working Conditions](https://ieeexplore.ieee.org/document/9410617)" proposed by Li et al.
-* The domain adversarial module can be added by referring to that paper.
+* The domain adversarial module can be added to CIDSAN with reference to this paper.
         
 Datasets
 -
