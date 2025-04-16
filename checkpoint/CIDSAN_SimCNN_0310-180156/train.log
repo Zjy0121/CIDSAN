@@ -1,0 +1,48 @@
+03-10 18:01:56 model_name: CIDSAN_SimCNN
+03-10 18:01:56 data_name: SQI
+03-10 18:01:56 data_dir: ['./data/CWRU', 'C:\\Users\\zjy\\Desktop\\BCIDSAN\\data\\LAB']
+03-10 18:01:56 transfer_task: [[2], [3]]
+03-10 18:01:56 normlizetype: mean-std
+03-10 18:01:56 cuda_device: 0
+03-10 18:01:56 checkpoint_dir: ./checkpoint
+03-10 18:01:56 pretrained: False
+03-10 18:01:56 batch_size: 64
+03-10 18:01:56 num_workers: 0
+03-10 18:01:56 bottleneck: True
+03-10 18:01:56 bottleneck_num: 256
+03-10 18:01:56 last_batch: False
+03-10 18:01:56 hidden_size: 1024
+03-10 18:01:56 trade_off_distance: Step
+03-10 18:01:56 lam_distance: 1
+03-10 18:01:56 distance_metric: True
+03-10 18:01:56 structure_loss: DSAN
+03-10 18:01:56 cost_loss: True
+03-10 18:01:56 loss: LDAM_CCBL
+03-10 18:01:56 Lambda: 0.8
+03-10 18:01:56 micro: 0.5
+03-10 18:01:56 seed: 42
+03-10 18:01:56 signal_size: 1024
+03-10 18:01:56 sample_stride: 1024
+03-10 18:01:56 test_sample: 200
+03-10 18:01:56 source_sample: [128, 128, 128, 128]
+03-10 18:01:56 target_sample: [128, 128, 128, 128]
+03-10 18:01:56 opt: adam
+03-10 18:01:56 lr: 0.001
+03-10 18:01:56 momentum: 0.9
+03-10 18:01:56 weight_decay: 1e-05
+03-10 18:01:56 lr_scheduler: step
+03-10 18:01:56 gamma: 0.1
+03-10 18:01:56 steps: 100, 150
+03-10 18:01:56 resume: 
+03-10 18:01:56 max_model_num: 0
+03-10 18:01:56 middle_epoch: 1
+03-10 18:01:56 max_epoch: 1
+03-10 18:01:56 print_step: 50
+03-10 18:01:56 visualization: True
+03-10 18:01:56 using 1 gpus
+03-10 18:01:57 -----Epoch 0/0-----
+03-10 18:01:57 current lr: [0.001, 0.001, 0.001]
+03-10 18:01:58 Epoch: 0 [0/512], Train Loss: 1.6595 Train Acc: 0.2500,53.3 examples/sec 1.20 sec/batch
+03-10 18:01:59 Epoch: 0 source_train-Loss: 1.6140 source_train-Acc: 0.2734, Cost 1.8 sec
+03-10 18:01:59 Epoch: 0 source_val-Loss: 1.4604 source_val-Acc: 0.2650, Cost 0.8 sec
+03-10 18:02:00 Epoch: 0 target_val-Loss: 1.4642 target_val-Acc: 0.2338, Cost 0.8 sec

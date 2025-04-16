@@ -1,0 +1,72 @@
+03-10 18:02:17 model_name: CIDSAN_SimCNN
+03-10 18:02:17 data_name: SQI
+03-10 18:02:17 data_dir: ['./data/CWRU', 'C:\\Users\\zjy\\Desktop\\BCIDSAN\\data\\LAB']
+03-10 18:02:17 transfer_task: [[2], [3]]
+03-10 18:02:17 normlizetype: mean-std
+03-10 18:02:17 cuda_device: 0
+03-10 18:02:17 checkpoint_dir: ./checkpoint
+03-10 18:02:17 pretrained: False
+03-10 18:02:17 batch_size: 64
+03-10 18:02:17 num_workers: 0
+03-10 18:02:17 bottleneck: True
+03-10 18:02:17 bottleneck_num: 256
+03-10 18:02:17 last_batch: False
+03-10 18:02:17 hidden_size: 1024
+03-10 18:02:17 trade_off_distance: Step
+03-10 18:02:17 lam_distance: 1
+03-10 18:02:17 distance_metric: True
+03-10 18:02:17 structure_loss: DSAN
+03-10 18:02:17 cost_loss: True
+03-10 18:02:17 loss: LDAM_CCBL
+03-10 18:02:17 Lambda: 0.8
+03-10 18:02:17 micro: 0.5
+03-10 18:02:17 seed: 42
+03-10 18:02:17 signal_size: 1024
+03-10 18:02:17 sample_stride: 1024
+03-10 18:02:17 test_sample: 200
+03-10 18:02:17 source_sample: [128, 128, 128, 128]
+03-10 18:02:17 target_sample: [128, 128, 128, 128]
+03-10 18:02:17 opt: adam
+03-10 18:02:17 lr: 0.001
+03-10 18:02:17 momentum: 0.9
+03-10 18:02:17 weight_decay: 1e-05
+03-10 18:02:17 lr_scheduler: step
+03-10 18:02:17 gamma: 0.1
+03-10 18:02:17 steps: 100, 150
+03-10 18:02:17 resume: 
+03-10 18:02:17 max_model_num: 1
+03-10 18:02:17 middle_epoch: 1
+03-10 18:02:17 max_epoch: 5
+03-10 18:02:17 print_step: 50
+03-10 18:02:17 visualization: True
+03-10 18:02:17 using 1 gpus
+03-10 18:02:18 -----Epoch 0/4-----
+03-10 18:02:18 current lr: [0.001, 0.001, 0.001]
+03-10 18:02:19 Epoch: 0 [0/512], Train Loss: 1.6518 Train Acc: 0.2969,59.7 examples/sec 1.07 sec/batch
+03-10 18:02:20 Epoch: 0 source_train-Loss: 1.6331 source_train-Acc: 0.2383, Cost 1.6 sec
+03-10 18:02:21 Epoch: 0 source_val-Loss: 1.4619 source_val-Acc: 0.2512, Cost 0.8 sec
+03-10 18:02:21 Epoch: 0 target_val-Loss: 1.4654 target_val-Acc: 0.2500, Cost 0.7 sec
+03-10 18:02:21 -----Epoch 1/4-----
+03-10 18:02:21 current lr: [0.001, 0.001, 0.001]
+03-10 18:02:22 Epoch: 1 source_train-Loss: 1.5704 source_train-Acc: 0.3184, Cost 0.7 sec
+03-10 18:02:23 Epoch: 1 source_val-Loss: 1.4420 source_val-Acc: 0.4088, Cost 0.7 sec
+03-10 18:02:24 Epoch: 1 target_val-Loss: 1.4574 target_val-Acc: 0.2700, Cost 0.7 sec
+03-10 18:02:24 save best model epoch 1, acc 0.2700
+03-10 18:02:24 -----Epoch 2/4-----
+03-10 18:02:24 current lr: [0.001, 0.001, 0.001]
+03-10 18:02:24 Epoch: 2 source_train-Loss: 1.4661 source_train-Acc: 0.4414, Cost 0.7 sec
+03-10 18:02:25 Epoch: 2 source_val-Loss: 1.3862 source_val-Acc: 0.4913, Cost 0.7 sec
+03-10 18:02:26 Epoch: 2 target_val-Loss: 1.4300 target_val-Acc: 0.3262, Cost 0.7 sec
+03-10 18:02:26 save best model epoch 2, acc 0.3262
+03-10 18:02:26 -----Epoch 3/4-----
+03-10 18:02:26 current lr: [0.001, 0.001, 0.001]
+03-10 18:02:26 Epoch: 3 source_train-Loss: 1.3914 source_train-Acc: 0.5137, Cost 0.7 sec
+03-10 18:02:27 Epoch: 3 source_val-Loss: 1.2493 source_val-Acc: 0.6438, Cost 0.7 sec
+03-10 18:02:28 Epoch: 3 target_val-Loss: 1.3694 target_val-Acc: 0.4213, Cost 0.7 sec
+03-10 18:02:28 save best model epoch 3, acc 0.4213
+03-10 18:02:28 -----Epoch 4/4-----
+03-10 18:02:28 current lr: [0.001, 0.001, 0.001]
+03-10 18:02:29 Epoch: 4 source_train-Loss: 1.2569 source_train-Acc: 0.6133, Cost 0.7 sec
+03-10 18:02:29 Epoch: 4 source_val-Loss: 1.0343 source_val-Acc: 0.6913, Cost 0.7 sec
+03-10 18:02:30 Epoch: 4 target_val-Loss: 1.2643 target_val-Acc: 0.4675, Cost 0.7 sec
+03-10 18:02:30 save best model epoch 4, acc 0.4675
