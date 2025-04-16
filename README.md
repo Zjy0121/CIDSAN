@@ -24,8 +24,8 @@ Citation
     volume = {242},
     pages = {115901},
     year = {2025},
-    doi = {https://doi.org/10.1016/j.measurement.2024.115901},
-    publisher={Elsevier}
+    issn = {0263-2241},
+    doi = {https://doi.org/10.1016/j.measurement.2024.115901}
     }
 
 Contact
